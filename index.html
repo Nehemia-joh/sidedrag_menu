@@ -1,0 +1,74 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Management system</title>
+
+    <style>
+        @import url('css/dropdown.css');
+        @import url('css/css.css');
+    </style>
+</head>
+<body>
+<div id="mySidenav" class="tab sidenav " target="main">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a onclick="openTab(event, 'Dashboard')">Dashboard</a>
+    <a class="dropdown-btn">Requstion
+        <i class="fa fa-caret-down"></i>
+    </a>
+      <div class="dropdown-container">
+        <a onclick="openTab(event, 'RequestForm')">RequestForm</a>
+        <a onclick="openTab(event, 'Refund')">Refund</a>
+        <a onclick="openTab(event, 'Permission')">Permission</a>
+        <a onclick="openTab(event, 'MaterialRequstion')">Material Requstion</a>
+      </div>
+      <a>.....</a>
+    <a href="#">Log out</a>
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+  <span onclick="openNav()">&#9776;</span>
+  
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div  id="main" >
+    <div id="Dashboard" class="tabcontent">
+        <button class="button"><span>Service Records </span></button>
+        <button class="button"><span>Requstion Form </span></button>
+        <button class="button accordion"><span>Church Information </span></button>
+        <div class="panel">
+            <button class="button accordion"><span>zones</span></button>
+            <div class="panel">
+                <button class="button accordion"><span>Districts </span></button>
+                <div class="panel">
+                    <p>Local churches</p>
+                  </div>
+              </div>
+          </div>
+        <div>
+            <button class="button"><span>Reporting </span></button>
+            <button class="button"><span>Pastors </span></button>
+        </div>
+        <div>
+            <button class="button"><span>Education Assistance </span></button>
+        </div>
+  </div>
+  <div id="RequestForm" class="tabcontent">
+    <button class="button"><span>Request Form </span></button>
+  </div> 
+  <div id="Refund" class="tabcontent">
+    <button class="button"><span>Refund</span></button>
+  </div> 
+  <div id="Permission" class="tabcontent">
+    <button class="button"><span>Permission (Leave) </span></button>
+  </div> 
+  <div id="MaterialRequstion" class="tabcontent">
+    <button class="button"><span>Material Requstion</span></button>
+  </div> 
+  </div>
+</body>
+<script src="js/ls.js">
+
+</script>
+
+
+  
+  
+
